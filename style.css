@@ -412,3 +412,14 @@ a {
 .about-me p {
 	color: whitesmoke;
 }
+
+.overlay-menu {
+    /* existing styles... */
+    transform: translateX(-100%);
+    /* additional styles... */
+    transition: transform 0.3s ease-out;
+}
+
+.overlay-menu.show {
+    transform: translateX(0);
+}
