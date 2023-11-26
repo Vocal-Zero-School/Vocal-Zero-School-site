@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/gif" href="images/ICON.gif" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Null - Other Accounts</title>
+		<link rel="stylesheet" href="Null.css" />
+	</head>
+
+	<body>
+		<nav id="navbar" class="">
+			<div class="nav-wrapper">
+				<div class="logo">
+					<a href="home.html"><i class="vz"></i> Vocal-Zero</a>
+				</div>
+				<ul id="menu">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="about-me.html">About Me</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="null.html">Null</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="content">
+			<h1>Other Accounts</h1>
+			<div class="account novexal">
+				<h2>Novexal</h2>
+				<p>Novexal is my alternative host where i work with Music and make Modded tracks or EDM Soundtracks</p>
+				<a href="novexal.html">Visit Novexal</a>
+			</div>
+			<div class="account suranova">
+				<h2>Suranova</h2>
+				<p>Suranova is another alternative host where i work with Visuals and design art</p>
+				<a href="suranova.html">Visit Suranova</a>
+			</div>
+		</div>
+		<script>
+			// Get the current URL pathname
+			const path = window.location.pathname;
+
+			// Check if the pathname contains "novexal" or "suranova"
+			if (path.includes("novexal")) {
+				document.documentElement.style.setProperty("--navbar-color", "limegreen");
+			} else if (path.includes("suranova")) {
+				document.documentElement.style.setProperty("--navbar-color", "magenta");
+			} else {
+				document.documentElement.style.setProperty("--navbar-color", "rgb(0, 58, 204)");
+			}
+		</script>
+	</body>
+</html>

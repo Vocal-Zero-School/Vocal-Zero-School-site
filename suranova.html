@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/png" href="images/Suranova.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Null - Suranova</title>
+		<link rel="stylesheet" href="suranova.css" />
+		<style>
+			/* Additional styles for fade-in effect */
+			.account {
+				opacity: 0;
+				transition: opacity 1s ease;
+			}
+
+			.show {
+				opacity: 1;
+			}
+		</style>
+	</head>
+	<body>
+		<nav id="navbar" class="">
+			<div class="nav-wrapper">
+				<div class="logo">
+					<img src="images/Suranova.png" />
+					<a href="home.html"><i class="vz"></i> Suranova</a>
+				</div>
+				<ul id="menu">
+					<li><a href="home.html">Home</a></li>
+					<li><a href="about-me.html">About Me</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="null.html">Null</a></li>
+				</ul>
+			</div>
+		</nav>
+
+		<div class="content">
+			<h1>About Suranova</h1>
+			<div class="account">
+				<h2>Suranova - Visual Artist</h2>
+				<p>Suranova is an emerging visual artist known for vibrant and surreal artworks that captivate the imagination.</p>
+				<p>With a fusion of bold colors and intricate designs, Suranova's creations transport viewers into surreal and dreamlike worlds.</p>
+				<p>Exploring various mediums and styles, Suranova seeks to evoke emotions and inspire creativity through each unique piece.</p>
+				<p>Experience the enchanting world of Suranova's art, where reality blends with imagination and storytelling.</p>
+				<a href="#">View Suranova's Artworks</a>
+			</div>
+		</div>
+
+		<script>
+			window.addEventListener("load", function () {
+				const accountSection = document.querySelector(".account");
+				accountSection.classList.add("show");
+			});
+		</script>
+	</body>
+</html>
