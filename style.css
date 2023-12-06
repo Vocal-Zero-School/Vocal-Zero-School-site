@@ -7,6 +7,14 @@
 	src: url("fonts/Voltage-Light.otf"), url("fonts/Voltage-Light.otf") format("truetype"), url("fonts/Voltage-Light.otf") format("svg");
 	font-weight: normal;
 	font-style: normal;
+	font-family: "SINGLE FIGHTER";
+	src: url("fonts/SINGLE FIGHTER.otf"), url("fonts/SINGLE FIGHTER.otf") format("truetype"), url("fonts/SINGLE FIGHTER.otf") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-family: "Ice Mirror in Winter Kei";
+	src: url("fonts/Ice Mirror in Winter Kei.ttf"), url("fonts/Ice Mirror in Winter Kei.ttf") format("truetype"), url("fonts/Ice Mirror in Winter Kei.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
@@ -633,11 +641,13 @@ nav.navbar :hover {
 /* Novexal title color */
 .account.novexal h2 {
 	color: limegreen;
+	font-family: "Ice Mirror in Winter Kei", Arial, sans-serif;
 }
 
 /* Suranova title color */
 .account.suranova h2 {
 	color: magenta;
+	font-family: "SINGLE FIGHTER", Arial, sans-serif;
 }
 
 .account p {
@@ -664,6 +674,8 @@ nav.navbar :hover {
 /* Title color for Suranova */
 .content > h1:hover + .account.suranova h2 {
 	color: magenta;
+
+	font-family: "ELNATH", Arial, sans-serif;
 }
 .account {
 	border: 2px solid var(--navbar-color);

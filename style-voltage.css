@@ -5,6 +5,27 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: "INTO THE VOID";
+	src: url("fonts/INTO THE VOID.OTF"), url("fonts/INTO THE VOID.OTF") format("truetype"), url("fonts/INTO THE VOID.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Vocal";
+	src: url("fonts/Vocal.TTF"), url("fonts/Vocal.TTF") format("truetype"), url("fonts/Vocal.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "ROAD_RAGE";
+	src: url("fonts/ROAD_RAGE.OTF"), url("fonts/ROAD_RAGE.OTF") format("truetype"), url("fonts/ROAD_RAGE.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
 body {
 	background-color: rgb(13, 18, 28);
 	color: whitesmoke;
@@ -454,17 +475,33 @@ a {
 
 /* Styling for the smaller titles */
 .small-titles {
+	text-align: center; /* Center-align the text within the .small-titles container */
 	margin-top: 20px; /* Adjust top margin as needed */
-	font-family: "ELNATH";
 }
 
 .small-titles h2 {
 	font-size: 1.8em; /* Adjust font size as needed */
-	color: white; /* Text color */
 	margin-bottom: 10px; /* Adjust bottom margin as needed */
-	text-align: center; /* Center align the text */
-	font-family: "ELNATH";
+	text-align: center; /* Center-align the text */
 }
+
+small-titles h2-1 {
+	font-family: "INTO THE VOID", Arial, sans-serif;
+	color: linear-gradient(to right, rgb(105, 0, 128), rgb(0, 247, 255) 9, 230), rgb(105, 0, 128); /* Gradient background */
+	-webkit-background-clip: text; /* Clip the text to the gradient */
+	background-clip: text; /* Clip the text to the gradient */
+	-webkit-text-fill-color: transparent; /* Make the text transparent */
+}
+.small-titles .h2-2 {
+	color: rgb(255, 255, 255); /* Text color for h2-2 */
+	font-family: "Vocal", Arial, sans-serif;
+}
+
+.small-titles .h2-3 {
+	color: rgb(123, 0, 255); /* Text color for h2-3 */
+	font-family: "ROAD_RAGE", Arial, sans-serif;
+}
+
 /* Add these styles for aligning V1 and Video 2 */
 .content-wrapper {
 	display: flex;
