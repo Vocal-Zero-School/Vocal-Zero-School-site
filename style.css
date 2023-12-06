@@ -571,6 +571,9 @@ nav.navbar :hover {
 	text-align: center; /* Center-align text */
 	width: 100%; /* Take full available width */
 }
+.profile-details h2 {
+	font-family: "ELNATH", Arial, sans-serif;
+}
 
 /* Other accounts*/
 .account {
