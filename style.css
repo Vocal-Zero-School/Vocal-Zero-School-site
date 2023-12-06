@@ -3,6 +3,10 @@
 	src: url("fonts/ELNATH.ttf"), url("fonts/ELNATH.ttf") format("truetype"), url("fonts/ELNATH.svg") format("svg");
 	font-weight: normal;
 	font-style: normal;
+	font-family: "Voltage-Light";
+	src: url("fonts/Voltage-Light.otf"), url("fonts/Voltage-Light.otf") format("truetype"), url("fonts/Voltage-Light.otf") format("svg");
+	font-weight: normal;
+	font-style: normal;
 }
 
 body {
@@ -11,9 +15,11 @@ body {
 }
 nav {
 	color: whitesmoke;
+	transition: all 1s ease-in-out;
 }
 nav.navbar :hover {
-	color: (0, 58, 204);
+	color: rgb(0, 58, 204);
+	transition: all 1s ease-in-out;
 }
 * {
 	border: 0;
@@ -24,7 +30,6 @@ nav.navbar :hover {
 
 a {
 	color: inherit;
-	font-family: ELNATH;
 	font-size: inherit;
 	text-decoration: none;
 }
@@ -41,11 +46,12 @@ a {
 	line-height: 60px;
 	width: 100vw;
 	z-index: 10;
+	transition: all 1s ease-in-out;
 }
 #navbar :hover {
-	background: rgb(0, 58, 204);
+	background: rgb(2, 46, 158);
 	color: rgb(255, 255, 255);
-	transition: all 1s ease;
+	transition: all 1s ease-in-out;
 }
 
 .nav-wrapper {
@@ -66,12 +72,12 @@ a {
 
 .logo {
 	float: left;
-	margin-left: 28px;
+	margin-left: 10px; /* Decrease the margin to move the logo more to the left */
 	font-size: 1.5em;
 	height: 60px;
 	letter-spacing: 1px;
 	font-size: bold;
-	transition: all 1s ease;
+	transition: all 1s ease-in-out;
 	text-transform: uppercase;
 }
 @media (max-width: 768px) {
@@ -87,22 +93,25 @@ a {
 	/* margin-right: 14px; */
 	margin-top: -2px;
 	text-align: right;
-	transition: transform 0.5s ease-out;
-	-webkit-transition: transform 0.5s ease-out;
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
 }
 @media (max-width: 640px) {
 	#navbar ul {
 		display: none;
+		transition: all 1s ease-in-out;
 	}
 }
 @media (orientation: landscape) {
 	#navbar ul {
 		display: inline-block;
+		transition: all 1s ease-in-out;
 	}
 }
 
 #navbar li {
 	display: inline-block;
+	transition: all 1s ease-in-out;
 }
 
 #navbar li a {
@@ -116,19 +125,21 @@ a {
 	position: relative;
 	text-decoration: none;
 	text-transform: uppercase;
-	transition: all 0.5s ease;
-	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.5s ease-in-out;
 }
 
 #navbar li a:hover:before {
 	color: rgb(255, 255, 255);
+	transition: all 1s ease-in-out;
 }
 
 #navbar li a:hover {
 	/* border-bottom: 1px solid rgb(28, 121, 184); */
 	color: rgb(255, 255, 255);
 	transition: all 1s ease;
-	-webkit-transition: all 1s ease;
+	-webkit-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 
 /* Animated Bottom Line */
@@ -139,17 +150,33 @@ a {
 	width: 0%;
 	height: 1px;
 	bottom: -1px;
+	transition: all 1s ease-in-out;
 }
 
 #navbar li a:before {
 	left: 0;
 	transition: 0.5s;
+	transition: all 1s ease-in-out;
+}
+#navbar li a.active {
+	color: var(--active-link-color); /* Change the color of the active link */
+}
+
+#navbar li a.active:before {
+	content: "";
+	position: absolute;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: var(--active-link-color); /* Change the color of the active bar */
+	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1); /* Transition effect */
 }
 
 #navbar li a:after {
 	background: rgb(255, 255, 255);
 	right: 0;
-	transition: all 1s ease;
+	transition: all 1s ease-in-out;
 	/* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
 }
 
@@ -161,8 +188,8 @@ a {
 
 #navbar li a:hover:after {
 	color: rgb(255, 255, 255);
-	transition: all 1s ease;
-	-webkit-transition: all 1s ease;
+	transition: all 1s ease-in-out;
+	-webkit-transition: all 1s ease-in-out;
 }
 
 /*======================================================
@@ -336,8 +363,8 @@ a {
 	.menuIcon.toggle .icon-bars.overlay {
 		width: 20px;
 		opacity: 0;
-		-webkit-transition: all 0s ease 0s;
-		transition: all 0s ease 0s;
+		-webkit-transition: all 0s ease-in-out 0s;
+		transition: all 0s ease-in-out 0s;
 	}
 }
 
@@ -345,7 +372,7 @@ a {
 					 Responsive Mobile Menu 
 	======================================================*/
 .overlay-menu {
-	background: lightblue;
+	background: rgb(32, 122, 247);
 	color: rgb(13, 26, 38);
 	display: flex;
 	align-items: center;
@@ -357,8 +384,8 @@ a {
 	transform: translateX(-100%);
 	width: 100vw;
 	height: 100vh;
-	-webkit-transition: transform 0.2s ease-out;
-	transition: transform 0.2s ease-out;
+	-webkit-transition: transform 0.2s ease-in-out;
+	transition: transform 0.2s ease-in-out;
 }
 
 .overlay-menu ul,
@@ -375,33 +402,36 @@ a {
 	padding: 10px 0;
 	text-align: right;
 	text-transform: uppercase;
-	-webkit-transition: color 0.3s ease;
-	transition: color 0.3s ease;
-	/*   -webkit-transition: 0.2s opacity 0.2s ease-out;
-	transition: 0.2s opacity 0.2s ease-out; */
+	-webkit-transition: color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
+	/*   -webkit-transition: 0.2s opacity 0.2s ease-in-out;
+	transition: 0.2s opacity 0.2s ease-in-out; */
 }
 
 .overlay-menu li a:hover,
 .overlay-menu li a:active {
 	color: rgb(28, 121, 184);
-	-webkit-transition: color 0.3s ease;
-	transition: color 0.3s ease;
+	-webkit-transition: color 0.3s ease-in-out;
+	transition: color 0.3s ease-in-out;
 }
 
 /* Add this CSS to change navbar to blue on hover */
 #navbar:hover {
 	background: rgb(0, 58, 204); /* Change the background color to blue */
 	color: white; /* Change the text color to white or any preferred color */
+	transition: color 0.3s ease-in-out;
 }
 
 /* Add this CSS to change the link color on navbar hover */
 #navbar li a:hover {
 	color: white; /* Change the link text color on hover */
+	transition: color 0.3s ease-in-out;
 }
 /* Add this CSS to change logo and navigation text to white on navbar hover */
 #navbar:hover .logo,
 #navbar:hover li a {
 	color: white; /* Change the text color to white when navbar is hovered */
+	transition: color 0.3s ease-in-out;
 }
 .logo img {
 	vertical-align: middle; /* Ensure proper alignment of the image */
@@ -414,12 +444,316 @@ a {
 }
 
 .overlay-menu {
-    /* existing styles... */
-    transform: translateX(-100%);
-    /* additional styles... */
-    transition: transform 0.3s ease-out;
+	/* existing styles... */
+	transform: translateX(-100%);
+	/* additional styles... */
+	transition: transform 0.3s ease-in-out;
 }
 
 .overlay-menu.show {
-    transform: translateX(0);
+	transform: translateX(0);
+}
+
+/*ABOUT ME*/
+
+.about-me p {
+	color: whitesmoke;
+}
+
+.overlay-menu {
+	/* existing styles... */
+	transform: translateX(-100%);
+	/* additional styles... */
+	transition: transform 0.3s ease-in-out;
+}
+
+.overlay-menu.show {
+	transform: translateX(0);
+}
+
+.about-me p {
+	color: whitesmoke;
+}
+@font-face {
+	font-family: "ELNATH";
+	src: url("fonts/ELNATH.ttf"), url("fonts/ELNATH.ttf") format("truetype"), url("fonts/ELNATH.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	background-color: rgb(13, 18, 28);
+	color: whitesmoke;
+	font-family: "Voltage-Light", Arial, sans-serif; /* Applying the custom font */
+}
+
+nav {
+	color: whitesmoke;
+	transition: color 0.3s ease-in-out;
+}
+
+nav.navbar :hover {
+	color: rgb(0, 58, 204);
+	transition: color 0.3s ease-in-out;
+}
+
+/* ... (existing navbar styles continue here) ... */
+
+.about-me p {
+	color: whitesmoke; /* Applying text color to the paragraphs in the "About Me" section */
+}
+.info-container {
+	background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+	padding: 20px;
+	margin-top: 70px; /* Adjust the margin to place it below the navbar */
+}
+.info-content h1 {
+	font-family: "ELNATH", Arial, sans-serif;
+}
+.info-content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.info-text {
+	color: whitesmoke;
+	font-family: "ELNATH", Arial, sans-serif;
+	font-size: 1.2em;
+	line-height: 1.6;
+	text-align: justify;
+}
+
+.info-text p {
+	margin-bottom: 15px;
+}
+
+.info-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	margin-top: 50px; /* Adjust the margin as needed */
+}
+
+/* Profile Schematic Styling */
+.profile-border {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	height: 100vh; /* Utilizes full viewport height */
+	padding: 20px;
+}
+
+.profile-schematic {
+	background-color: #12232e; /* Sci-fi background color */
+	border: 2px solid #2937ff; /* Sci-fi border color */
+	border-radius: 10px; /* Rounded border corners */
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 800px; /* Limiting the max width for better readability */
+	width: 100%; /* Take full available width */
+	box-sizing: border-box;
+}
+
+.profile-pic {
+	width: 250px; /* Adjust the size of the profile picture */
+	height: 300px; /* Adjust the size of the profile picture */
+
+	margin-bottom: 20px; /* Spacing between profile picture and details */
+}
+
+.profile-details {
+	color: white; /* Text color */
+	text-align: center; /* Center-align text */
+	width: 100%; /* Take full available width */
+}
+
+/* Other accounts*/
+.account {
+	border: 2px solid var(--navbar-color);
+	border-radius: 8px;
+	padding: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.05);
+	color: whitesmoke;
+	transition: transform 0.3s ease-in-out;
+}
+
+.account h2 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	color: var(--navbar-color);
+}
+
+.account p {
+	font-size: 1.1em;
+	line-height: 1.6;
+	margin-bottom: 15px;
+}
+
+.account a {
+	color: var(--navbar-color);
+	text-decoration: none;
+	font-weight: bold;
+	border: 2px solid var(--navbar-color);
+	border-radius: 5px;
+	padding: 8px 20px;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.account a:hover {
+	background-color: var(--navbar-color);
+	color: #fff;
+}
+
+/* Header Styling */
+.content > h1 {
+	font-size: 2em;
+	margin-bottom: 20px;
+	color: var(--navbar-color);
+}
+.account {
+	/* Existing styles... */
+}
+
+.account h2 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	transition: color 0.3s ease-in-out;
+}
+
+/* Novexal title color */
+.account.novexal h2 {
+	color: limegreen;
+}
+
+/* Suranova title color */
+.account.suranova h2 {
+	color: magenta;
+}
+
+.account p {
+	/* Existing styles... */
+}
+
+.account a {
+	/* Existing styles... */
+}
+
+/* Header Styling */
+.content > h1 {
+	font-size: 2em;
+	margin-bottom: 20px;
+	color: var(--navbar-color);
+	transition: color 0.3s ease-in-out;
+}
+
+/* Title color for Novexal */
+.content > h1:hover {
+	color: limegreen;
+}
+
+/* Title color for Suranova */
+.content > h1:hover + .account.suranova h2 {
+	color: magenta;
+}
+.account {
+	border: 2px solid var(--navbar-color);
+	border-radius: 8px;
+	padding: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.05);
+	color: whitesmoke;
+	transition: transform 0.3s ease-in-out;
+}
+
+.account h2 {
+	font-size: 1.5em;
+	margin-bottom: 10px;
+	color: var(--navbar-color);
+}
+
+.account p {
+	font-size: 1.1em;
+	line-height: 1.6;
+	margin-bottom: 15px;
+}
+
+.account a {
+	color: var(--navbar-color);
+	text-decoration: none;
+	font-weight: bold;
+	border: 2px solid var(--navbar-color);
+	border-radius: 5px;
+	padding: 8px 20px;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Novexal button color on hover */
+.account.novexal a:hover {
+	background-color: limegreen;
+	color: #fff;
+}
+
+/* Suranova button color on hover */
+.account.suranova a:hover {
+	background-color: magenta;
+	color: #fff;
+}
+
+/* Header Styling */
+.content > h1 {
+	font-size: 2em;
+	margin-bottom: 20px;
+	color: var(--navbar-color);
+}
+/* Style for the hero section */
+.hero-section {
+	background-color: #f8f8f8;
+	text-align: center;
+	padding: 100px 0;
+}
+
+/* Style for the hero content */
+.hero-content {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.hero-content h1 {
+	font-size: 3em;
+	color: #333;
+	margin-bottom: 20px;
+}
+
+.hero-content p {
+	font-size: 1.2em;
+	color: #666;
+	margin-bottom: 30px;
+}
+
+/* Style for the button */
+.btn {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #007bff;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s ease-in-out;
+}
+
+.btn:hover {
+	background-color: #0056b3;
+}
+
+.logo a,
+.hero-content h1 {
+	font-family: "ELNATH", Arial, sans-serif;
 }
