@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../OneDrive/Documenten/Multimedia/WEB1/Web1-Main site-Vocal-Zero/web1-courseproject-Vocal-Zero-School/.vscode"
+		},
+		{
+			"path": "../OneDrive/Documenten/Multimedia/WEB1/Web1-Main site-Vocal-Zero/web1-courseproject-Vocal-Zero-School/fonts"
+		},
+		{
+			"path": "../OneDrive/Documenten/Multimedia/WEB1/Web1-Main site-Vocal-Zero/web1-courseproject-Vocal-Zero-School/images"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Vocal-Zero-School-site",
+		"liveServer.settings.port": 5502
+	}
+}
