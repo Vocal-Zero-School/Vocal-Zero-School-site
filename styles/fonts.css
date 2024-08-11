@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'Dead Space';
+    src: url('./fonts/Dead Space.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ELNATH';
+    src: url('./fonts/ELNATH.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Ice Mirror in Winter kei';
+    src: url('./fonts/Ice Mirror in Winter Kei.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'INTO THE VOID';
+    src: url('./fonts/INTO THE VOID.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'RoadRage';
+    src: url('./fonts/RoadRage.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'SFAlienEncountersSolid';
+    src: url('./fonts/SFAlienEncountersSolid.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'SINGLE FIGHTER';
+    src: url('./fonts/SINGLE FIGHTER.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Streamster';
+    src: url('./fonts/Streamster.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vocal';
+    src: url('./fonts/Sparkle.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'impact';
+    src: url('./fonts/impact.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'FutureTech';
+    src: url('./fonts/FutureTech.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Warehouse';
+    src: url('./fonts/Nowharehouse.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Streetbomber';
+    src: url('./fonts/Streetbomber.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Poker';
+    src: url('./fonts/Poker.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Vocal-Filled';
+    src: url('./fonts/SparkleFilled.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'vcr';
+    src: url('./fonts/vcr_2.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Hindsight';
+    src: url('./fonts/Hindsight 2020.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Hindsight-Straight';
+    src: url('./fonts/Hindsight 2020 Straight.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Sparkles';
+    src: url('./fonts/Sparkles.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Ode';
+    src: url('./fonts/Ode to Idle Gaming.otf') format('opentype');
+}
+@font-face {
+    font-family: 'justicechrome';
+    src: url('./fonts/justicechrome.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'justicehalf';
+    src: url('./fonts/justicehalf.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'justiceacad';
+    src: url('./fonts/justiceacad.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'justicegradout';
+    src: url('./fonts/justicegradout.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'justice3d';
+    src: url('./fonts/justice3d.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'justicegrad';
+    src: url('./fonts/justicegrad.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'justiceoutstraight';
+    src: url('./fonts/justiceoutstraight.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'justiceexpandout';
+    src: url('./fonts/justiceexpandout.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'justicecondout';
+    src: url('./fonts/justicecondout.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'justiceoutital';
+    src: url('./fonts/justiceoutital.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'justiceoutsemital';
+    src: url('./fonts/justiceoutsemital.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'justiceout';
+    src: url('./fonts/justiceout.TTF') format('truetype');
+}  
+@font-face {
+    font-family: 'montrocacadital';
+    src: url('./fonts/montrocacadital.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montrocacad';
+    src: url('./fonts/montrocacad.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montrocexpandital';
+    src: url('./fonts/montrocexpandital.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montrocexpand';
+    src: url('./fonts/montrocexpand.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montrocoutital';
+    src: url('./fonts/montrocoutital.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montroccondital';
+    src: url('./fonts/montroccondital.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montroccond';
+    src: url('./fonts/montroccond.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montroc3d';
+    src: url('./fonts/montroc3d.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montrochalf';
+    src: url('./fonts/montrochalf.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montrocgrad';
+    src: url('./fonts/montrocgrad.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montrocital';
+    src: url('./fonts/montrocital.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montrocleft';
+    src: url('./fonts/montrocleft.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montrocsuperital';
+    src: url('./fonts/montrocsuperital.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montrocsemital';
+    src: url('./fonts/montrocsemital.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montrocout';
+    src: url('./fonts/montrocout.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montroc3dital';
+    src: url('./fonts/montroc3dital.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montrocgradital';
+    src: url('./fonts/montrocgradital.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montroclaser';
+    src: url('./fonts/montroclaser.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montroclaserital';
+    src: url('./fonts/montroclaserital.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montrochalfital';
+    src: url('./fonts/montrochalfital.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'montroc';
+    src: url('./fonts/montroc.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'VCR-OSD';
+    src: url('./fonts/VCR_OSD_MONO_1.001.TTF') format('truetype');
+}
+@font-face {
+    font-family: 'Mechsuit';
+    src: url('./fonts/Mechsuit.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Symtext';
+    src: url('./fonts/Symtext.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Vermin';
+    src: url('./fonts/Vermin Vibes 1989.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Vcr-0';
+    src: url('./fonts/Vcr.otf') format('opentype');
+}
+@font-face {
+    font-family: 'rust';
+    src: url('./fonts/rust.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'SFAlienEncounters';
+    src: url('./fonts/SFAlienEncounters.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Shoguns';
+    src: url('./fonts/Shoguns Clan.ttf') format('truetype');
+}
+
+
+
+
