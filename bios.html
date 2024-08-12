@@ -3,13 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Vocal-Zero - Game Designer, Digital Artist, and EDM Musician.">
-    <title>Vocal-Zero - Game Designer | Digital Artist | EDM Musician</title>
-    <!-- Link to the fonts.css file -->
-    <link rel="stylesheet" href="styles/fonts.css">
-    <!-- Link to the main stylesheet -->
+    <meta name="description" content="Biography of Vocal-Zero">
+    <title>Vocal-Zero - Bios</title>
+    <!-- Link to the shared stylesheet (styles.css) -->
+    <link rel="fonts" href="styles/fonts.css">
     <link rel="stylesheet" href="styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="bios" href="styles/bios.css">
 </head>
 <body>
     <header class="site-header">
@@ -17,7 +16,8 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="portofolio.html">Portfolio</a></li>
+                <li><a href="bios.html">Bios</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -28,77 +28,27 @@
         </div>
     </header>
 
-    <div id="home" class="page-section home">
-        <div class="overlay"></div>
-        <div class="content">
+    <div class="bios-container page-section">
+        <div class="bios-header">
             <h1>Vocal-Zero</h1>
-            <p>Game Designer | Digital Artist | EDM Musician</p>
-            <button class="cta-button">
-                <a href="#portfolio">Explore My Work</a>
-            </button>
-		</div>
-    </div>
-
-    <div id="portfolio" class="page-section portfolio">
-        <div class="content">
-            <h2>Portfolio</h2>
-            <div class="portfolio-categories">
-                <div class="category game-design">
-                    <h3>Game Design</h3>
-                    <p>Explore my game development projects, from concept art to fully realized games.</p>
-                    <button class="cta-button"><a href="#games">View Games</a></button>
-                </div>
-                <div class="category digital-art">
-                    <h3>Digital Art</h3>
-                    <p>Browse my collection of digital artworks, featuring a blend of sci-fi and modern aesthetics.</p>
-                    <button class="cta-button"><a href="#art">View Art</a></button>
-                </div>
-                <div class="category edm-music">
-                    <h3>EDM Music</h3>
-                    <p>Listen to my EDM tracks and experience the fusion of sound and rhythm.</p>
-                    <button class="cta-button"><a href="#music">Listen to Music</a></button>
-                </div>
+        </div>
+        <div class="profile-info">
+            <div class="profile-item">
+                <span>Name:</span> <span>Vocal-Zero</span>
             </div>
-        </div>
-    </div>
-
-    <div id="games" class="page-section games">
-        <div class="content">
-            <h2>Game Design Projects</h2>
-            <p>Here are some of the games I've worked on...</p>
-            <!-- Add your game projects here -->
-        </div>
-    </div>
-
-    <div id="art" class="page-section art">
-        <div class="content">
-            <h2>Digital Art Gallery</h2>
-            <p>Here are some of my digital artworks...</p>
-            <!-- Add your digital art here -->
-        </div>
-    </div>
-
-    <div id="music" class="page-section music">
-        <div class="content">
-            <h2>EDM Music</h2>
-            <p>Here are some of my EDM tracks...</p>
-            <!-- Add your music tracks here -->
-        </div>
-    </div>
-
-    <div id="contact" class="page-section contact">
-        <div class="content">
-            <h2>Contact Vocal-Zero</h2>
-            <p>Interested in working together or have a question? Reach out to me below.</p>
-            <form action="#" method="POST">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit" class="cta-button">Send Message</button>
-            </form>
+            <div class="profile-item">
+                <span>Age:</span> <span id="age"></span>
+            </div>
+            <div class="profile-item">
+                <span>Location:</span> <span class="black-bar">Grimbergen</span>
+            </div>
+            <div class="profile-item">
+                <span>Hobbies:</span>
+                <ul class="hobbies-list">
+                    <li>Adrenaline activities: Karting, Theme Parks, Height Obstacle Courses, Ziplining</li>
+                    <li>Gaming</li>
+                </ul>
+            </div>
         </div>
     </div>
 
@@ -106,6 +56,9 @@
         <p>&copy; 2024 Vocal-Zero. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <!-- Link to the shared script (script.js) for the hamburger menu -->
+    <script src="scripts/script.js"></script>
+    <!-- Link to the bios-specific script -->
+    <script src="scripts/bios.js"></script>
 </body>
 </html>

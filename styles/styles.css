@@ -1,4 +1,5 @@
-@import url('fonts.css'); /* Ensure fonts.css is imported */
+/* Ensure fonts.css is imported */
+@import url('/styles/fonts.css'); Ensure fonts.css is imported */
 body {
     font-family: 
         'Dead Space', 
@@ -81,7 +82,7 @@ body, html {
     font-size: 24px;
     font-weight: bold;
     color: #00ffcc;
-    font-family: 'Vocal-Filled', sans-serif; /* Font name should match exactly */
+    font-family: 'Vermin', sans-serif; /* Font name should match exactly */
     letter-spacing: 2px;
     text-shadow: 0 0 10px #00ffcc;
 }
@@ -120,13 +121,7 @@ h1, h2, h3 {
     box-shadow: 0 0 10px #000;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #00ffcc;
-    letter-spacing: 2px;
-    text-shadow: 0 0 10px #00ffcc;
-}
+
 
 .main-nav {
     flex: 1;
@@ -393,4 +388,144 @@ h1, h2, h3 {
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
+}
+
+/* Error Page Container */
+.error-container {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%; /* Ensure background stretches to the sides */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: #000;
+    color: #fff;
+}
+
+
+
+
+/* Main GIF styles */
+.main-gif img {
+    width: 400px; /* Main GIF size */
+    height: auto;
+    z-index: 10; /* Ensure the main GIF is on top */
+}
+
+/* Overlay GIFs styles */
+.gif-overlay {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 225px; /* Default size for side GIFs */
+    height: auto;
+    animation: float 3s ease-in-out infinite;
+    z-index: 5; /* Ensure side GIFs are below the main GIF */
+}
+
+/* Specific positioning for left and right side GIFs */
+.left-gif {
+    left: calc(50% - 600px); /* Position side GIFs to the left */
+    transform: translateX(-100%) translateY(-50%); /* Center horizontally */
+}
+
+.right-gif {
+    right: calc(50% - 600px); /* Position side GIFs to the right */
+    transform: translateX(100%) translateY(-50%); /* Center horizontally */
+}
+
+/* Animation for floating effect */
+@keyframes float {
+    0% {
+        transform: translateY(-50%) translateX(0);
+    }
+    50% {
+        transform: translateY(-60%) translateX(0);
+    }
+    100% {
+        transform: translateY(-50%) translateX(0);
+    }
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .main-gif img {
+        width: 70%; /* Reduce main GIF size on smaller screens */
+        max-width: 300px; /* Maximum width for main GIF */
+    }
+    
+    .gif-overlay {
+        width: 120px; /* Reduce side GIFs size on smaller screens */
+        z-index: 5; /* Ensure side GIFs are behind the main GIF */
+    }
+    
+    .left-gif {
+        left: calc(10% + 10px); /* Adjust position for mobile screens */
+        transform: translateX(-100%) translateY(-50%); /* Ensure side GIF is behind and to the left */
+    }
+    
+    .right-gif {
+        right: calc(10% + 10px); /* Adjust position for mobile screens */
+        transform: translateX(100%) translateY(-50%); /* Ensure side GIF is behind and to the right */
+    }
+}
+/* Text Styling */
+.error-container h1 {
+    font-size: 48px;
+    color: #ff4b4b;
+    margin: 20px 0;
+}
+
+.error-container p {
+    font-size: 24px;
+    color: #dcdcdc;
+    margin-bottom: 50px;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .main-nav ul {
+        display: none;
+    }
+
+    .main-nav.show ul {
+        display: block;
+        position: absolute;
+        background: #111;
+        width: 100%;
+        left: 0;
+        top: 60px;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+.contact-details ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-details li {
+    margin-bottom: 10px;
+}
+
+.contact-details a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 10px;
+    font-size: 24px; /* Adjust the size as needed */
+}
+
+.contact-details a:hover {
+    color: #007BFF; /* Change the hover color if desired */
 }
