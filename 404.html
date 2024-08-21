@@ -1,52 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Page Not Found</title>
-    <link rel="stylesheet" href="/styles/styles.css">
-</head>
-<body>
-    <header class="site-header">
-        <div class="logo">Vocal-Zero</div>
-        <nav class="main-nav">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="bios.html">Bios</a></li>
-                <li><a href="portofolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </nav>
-    </header>
-
-    <section class="page-section">
-        <div class="error-container">
-            <!-- Glitchy Portal -->
-            <div class="gif-overlay left-gif">
-                <img src="/images/NMI-2.gif" alt="NMI-2">
-            </div>
-            <div class="main-gif">
-                <img src="/images/NMI error-1.gif" alt="NMI Error">
-            </div>
-            <div class="gif-overlay right-gif">
-                <img src="/images/NMI-2.gif" alt="NMI-2">
-            </div>
-            <h1>Sorry</h1>
-            <p>We are currently still developing this page. Please return later.</p>
-        </div>
-    </section>
-
-    <footer class="site-footer">
-        &copy; 2024 Your Site. All rights reserved.
-    </footer>
-    
-    <audio id="background-audio" src="/sounds/error.mp3" autoplay loop></audio>
-    
-    <script src="scripts/script.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>404 - Page Not Found</title>
+		<style>
+			body {
+				font-family: Arial, sans-serif;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				margin: 0;
+				background-color: #f4f4f4;
+			}
+			.error-container {
+				text-align: center;
+			}
+			.error-message {
+				font-size: 24px;
+				margin-bottom: 20px;
+			}
+			.button {
+				display: inline-block;
+				padding: 10px 20px;
+				margin: 5px;
+				border: none;
+				border-radius: 5px;
+				color: #fff;
+				background-color: #007bff;
+				cursor: pointer;
+				text-decoration: none;
+			}
+			.button:hover {
+				background-color: #0056b3;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="error-container">
+			<div class="error-message">404 - No Connection</div>
+			<button class="button" id="retry-button">Retry Connection</button>
+			<button class="button" id="home-button">Return to Home</button>
+		</div>
+		<script src="scripts/initial.js"></script>
+	</body>
 </html>
